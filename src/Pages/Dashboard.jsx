@@ -8,7 +8,7 @@ function Dashboard() {
       name: "patient",
       role: "I'm a Patient",
       icon: <User className="text-[#1d4ed8] w-10 h-10" />,
-      text: "#1d4ed8", // Bullet + title color
+      text: "#1d4ed8",
       iconbgColor: "#bfdbfe",
       duty: "Track your medication schedule and maintain your health records",
       pointers: [
@@ -79,8 +79,8 @@ function Dashboard() {
             </ul>
             <button
               onClick={() => {
-                localStorage.setItem("user",card.name);
-                navigate('/progress')
+                localStorage.setItem("user", card.name);
+                navigate("/progress");
               }}
               className=" cursor-pointer mt-5 w-full text-white h-10 text-lg font-medium rounded-md"
               style={{ backgroundColor: card.text }}
@@ -91,7 +91,6 @@ function Dashboard() {
         ))}
       </div>
 
-      {/* Custom CSS for bullet color */}
       <style>{`
         .custom-bullets li::marker {
           color: var(--marker-color);

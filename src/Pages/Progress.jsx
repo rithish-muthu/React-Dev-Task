@@ -7,7 +7,6 @@ import {
   Image,
   Camera,
   Check,
-  Activity,
   Mail,
   Bell,
   TriangleAlert,
@@ -74,7 +73,7 @@ function Progress() {
   const handleImageChange = (e) => {
     const file = e.target.files[0];
     if (file) {
-      const url = URL.createObjectURL(file); // creates temporary URL
+      const url = URL.createObjectURL(file); 
       setImageUrl(url);
     }
   };
@@ -184,7 +183,7 @@ function Progress() {
                       </div>
                     </div>
 
-                    {/* Photo Proof Section */}
+
                     <div className="rounded-lg bg-card text-card-foreground shadow-sm border-dashed border-2 border-gray-300 flex flex-col items-center py-6 mt-6 gap-3">
                       <Image className="h-13 w-13 text-gray-500" />
                       <h3 className="font-medium">
@@ -212,7 +211,7 @@ function Progress() {
                       )}
                     </div>
 
-                    {/* Mark As Taken Button */}
+                   
                     <button
                       className={`w-full p-2 mt-6 rounded-md flex items-center justify-center gap-2
         ${
@@ -275,7 +274,7 @@ function Progress() {
                 )}
               </div>
 
-              {/* Right Panel: Calendar */}
+              
               <div className="bg-white rounded-xl shadow-md w-full p-6 mt-6">
                 <h2 className="text-xl font-semibold mb-4">
                   Medication Calendar
