@@ -413,7 +413,7 @@ function Progress() {
                         <h2 className="font-medium text-2xl">Quick Actions</h2>
                         <div
                           className="p-2 border border-gray-300 rounded-md flex items-center gap-4 cursor-pointer"
-                          onClick={() => alert("Remainder Email Sent To User")}
+                          onClick={() => alert("Remainder Email Sent To the Patient")}
                         >
                           <Mail />
                           <h4 className="font-medium">Send Remainder Email</h4>
