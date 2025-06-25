@@ -1,0 +1,27 @@
+.react-calendar {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.taken-dot {
+  background-color: green;
+}
+
+.missed-dot {
+  background-color: red;
+}
+
+.today-dot {
+  background-color: blue;
+}
+
